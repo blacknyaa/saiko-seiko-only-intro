@@ -1,0 +1,5 @@
+{
+  "buildCommand": "yarn install && yarn build",
+  "installCommand": "yarn install",
+  "outputDirectory": "public"
+}

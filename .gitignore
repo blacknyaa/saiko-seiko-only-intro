@@ -1,0 +1,13 @@
+dist
+.now
+.vercel
+node_modules
+public
+.DS_Store
+*.log
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+*.env.development.local

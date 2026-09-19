@@ -1,0 +1,382 @@
+html {
+  scroll-behavior: smooth;
+  
+  /* Prevent browser from restoring scroll position on refresh */
+  overscroll-behavior: contain;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  color: #151d29;
+  background: linear-gradient(45deg, #eff4f9, #48b1bf);
+  background-attachment: fixed;
+}
+
+#svg1 {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+
+  text {
+    text-rendering: geometricprecision;
+  }
+
+  #helloline {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke: #93cfd9;
+    stroke-dasharray: 300;
+    stroke-width: 1.2;
+  }
+
+  #helloline,
+  #desklogos,
+  #wireframe1,
+  #wireframe2,
+  #wireframe3,
+  #wireframe4,
+  #desklaptop,
+  #deskmonitor1,
+  #deskmonitor2,
+  #deskpen,
+  #desknotes,
+  #deskkeyboard,
+  #deskcoffee,
+  #desktablewindowshadow,
+  #desktable {
+    transform-origin: left;
+
+    path,
+    polygon,
+    ellipse {
+      opacity: 0;
+      stroke: #fff;
+      fill-opacity: 0;
+      stroke-width: 0.5;
+      stroke-linecap: round;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 4;
+      stroke-dashoffset: 0;
+    }
+
+    /* Ensure gradient stop elements are always visible */
+    stop {
+      opacity: 1 !important;
+      display: block !important;
+    }
+  }
+
+  #desktopsource {
+    transform-origin: left;
+  }
+
+  #terminal2textclip {
+    transform-origin: 2%;
+  }
+
+  #contactsbutton,
+  #githubbutton {
+    cursor: pointer;
+  }
+
+  #framemasked {
+    clip-path: inherit;
+  }
+
+  #chair1 {
+    path,
+    polygon {
+      fill-opacity: 0;
+      stroke: #dbdbdb;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 4;
+      stroke-dashoffset: 0;
+    }
+
+    /* Ensure gradient stop elements are always visible */
+    stop {
+      opacity: 1 !important;
+      display: block !important;
+    }
+  }
+
+  #room {
+    transform-origin: center;
+  }
+
+  #scrollhint {
+    opacity: 0;
+  }
+
+  #scrollhint,
+  #hotballoon,
+  #sky {
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #laptopwindowshadow {
+    mix-blend-mode: multiply;
+  }
+
+  #screen,
+  #screen_1_,
+  #screen_2_,
+  #screen_3_,
+  #screen_5_,
+  #screen_7_ {
+    mix-blend-mode: screen;
+  }
+
+  #dodge {
+    mix-blend-mode: color-dodge;
+  }
+
+  #companyshadows,
+  #chairshadow,
+  #tableshadow,
+  #table2shadow {
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+}
+
+#errorscr1 {
+  transform-origin: center;
+  opacity: 0;
+}
+
+#space {
+  transform-origin: center;
+  opacity: 0;
+}
+
+#spacelines,
+#moon,
+#moon2 {
+  opacity: 0;
+}
+
+#bulblines {
+  path,
+  polygon {
+    /* fill-opacity: 0; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 3000;
+  }
+}
+
+#bulbEllipses1,
+#bulbEllipses2 {
+  path,
+  polygon {
+    /* fill-opacity: 0; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 800;
+  }
+}
+
+#bulbbase{
+  path {
+    /* fill: #ffe3b3;
+    fill-opacity: 0.5; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+  }
+}
+
+#spacelines {
+  path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-width: 1.2;
+    opacity: 1;
+  }
+
+  #sl1 path {
+    stroke-dasharray: 2800;
+  }
+
+  #sl2 path {
+    stroke-dasharray: 800;
+  }
+
+  #sl3 path {
+    stroke-dasharray: 400;
+  }
+
+  #sl4 path {
+    stroke-dasharray: 2800;
+  }
+
+  #sl5 path {
+    stroke-dasharray: 1000;
+  }
+
+  #sl6 path {
+    stroke-dasharray: 800;
+  }
+
+  #sl7 path {
+    stroke-dasharray: 2000;
+  }
+}
+
+#collab {
+  transform-origin: center;
+
+  /* opacity: 0; */
+}
+
+#ladder {
+  polygon {
+    /* fill-opacity: 0; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 100;
+  }
+}
+
+#people {
+  path {
+    /* fill-opacity: 0; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 400;
+  }
+}
+
+#contacts {
+  transform-origin: center;
+  opacity: 0;
+}
+
+#door{
+  transform-origin: center;
+
+
+  polygon {
+    opacity: 0;
+    stroke: #fff;
+    fill-opacity: 0;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+  }
+}
+
+#doorhand {
+  path {
+    /* fill-opacity: 0; */
+    stroke: #ffe3b3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 400;
+  }
+}
+
+#textlandscape {
+  @media screen and (orientation: portrait) {
+    opacity: 0;
+  }
+}
+
+#textportrait {
+  opacity: 0;
+
+  @media screen and (orientation: portrait) {
+    opacity: 1;
+    transform: translate(610px, -280px) scale(3);
+  }
+}
+
+#contactMe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ededed;
+  font-family: Roboto, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 24px;
+  z-index: 102;
+  font-weight: 300;
+  opacity: 0;
+  display: none;
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  @media screen and (orientation: portrait) {
+    width: 90%;
+  }
+}
+
+/* iOS Chrome specific fixes */
+
+/* Chrome on iOS has different User Agent - CriOS */
+@supports (-webkit-touch-callout: none) {
+  /* This targets iOS devices */
+  body {
+    /* Prevent extra scrollable space on iOS Chrome */
+    overscroll-behavior-y: contain;
+
+    /* Prevent bounce scrolling */
+    -webkit-overflow-scrolling: touch;
+
+    /* Ensure proper height calculation */
+    min-height: 100vh;
+  }
+  
+  /* Prevent extra space at the bottom */
+  html {
+    /* Contain overscroll behavior */
+    overscroll-behavior: contain;
+
+    /* Ensure height is properly calculated */
+    height: 100%;
+  }
+}

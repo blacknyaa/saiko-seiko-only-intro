@@ -1,0 +1,38 @@
+#subContainer {
+  position: fixed;
+  z-index: 101;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (orientation: portrait) {
+    top: 2rem;
+    bottom: auto;
+  }
+}
+
+/* Force bottom positioning regardless of orientation */
+#subContainer.bottom-position {
+  bottom: 2rem;
+  top: auto;
+}
+
+/* Force top positioning regardless of orientation */
+#subContainer.top-position {
+  top: 2rem;
+  bottom: auto;
+}
+
+#subtitles {
+  font-family: Roboto, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 5vh;
+  color: #fff;
+  background: rgb(0 0 0 / 50%);
+  padding: 0.5vh 2vh;
+  text-align: center;
+
+  @media screen and (orientation: portrait) {
+    font-size: 3vh;
+  }
+}
