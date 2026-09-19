@@ -38,7 +38,7 @@ const BUTTON_CONFIGS = {
     type: "link",
   },
   githubbutton: {
-    url: "https://github.com/albinotonnina/saikoseiko.lovable.app/",
+    url: "https://github.com/blacknyaa/saiko-seiko-only-intro/",
     type: "link",
   },
   emailbutton: {
